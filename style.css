@@ -1,0 +1,134 @@
+/*overall frame*/
+body{
+    margin:0;
+    min-width:300px;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+/*the-header*/
+.the-header{
+    background-color:#F8494C;
+    padding:30px 42px;
+    color:white;
+    text-align:center;
+}
+
+.the-header::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/*the-input*/
+#the-input{
+    width:70%;
+    padding:10px;
+    float:left;
+    font-size:15px;
+    margin:0;
+    border:none;
+    border-radius:0;
+}
+
+/*create-button*/
+.create-button{
+    padding:9px;
+    background-color:gray;
+    font-size:15px;
+    width:20%;
+    color:#282828;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+    border-radius:0;
+    -webkit-transition: 0.4s;
+    -moz-transition:0.4s;
+    -ms-transition:0.4s;
+    -o-transition:0.4s;
+    transition:0.4s;
+}
+/*
+.create-button:hover{
+    background-color:red;
+}*/
+
+/*the-ul*/
+ul{
+    margin:10px;
+    padding:0;
+}
+
+ul li{
+    position:relative;
+    background-color:#ddd;
+    list-style-type:none;
+    cursor:pointer;
+    padding:10px 10px 10px 35px;
+    margin:3px;
+    border-radius:20px;
+    transition:0.3s;
+
+    -webkit-user-select: none;
+    --moz-user-select:none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:hover{
+    background-color:#ddd;
+}
+
+/*ul li checked*/
+ul li.checked::before{
+    content:'';
+    position:absolute;
+    border-color:white;
+    boder-style:solid;
+    border-width:0 2px 2px 0;
+    top:10px;
+    left:15px;
+    transform:rotate(45deg);
+    height:15px;
+    width:10px;
+}
+
+ul li.checked{
+    background:#282828;
+    color:white;
+    text-decoration:line-through;
+}
+
+/*close*/
+.fa-trash-alt{
+    position:absolute;
+    right:0;
+    top:0;
+    padding:10px 15px 10px 10px;
+}
+
+.fa-trash-alt:hover{
+    color:red;
+}
+
+/*check*/
+.fa-check{
+    position:absolute;
+    right:65px;
+}
+
+.fa-check:hover{
+    color:red;
+}
+
+/*star*/
+.fa-star{
+    position:absolute;
+    right:38px;
+}
+
+.fa-star:hover{
+    color:#F7B603;
+}
